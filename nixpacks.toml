@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["python39Full","gcc"]
+
+[phases.install]
+cmds = ["chmod +x install_deps.sh && bash install_deps.sh"]
+
+[start]
+cmd = "uvicorn api:app --host 0.0.0.0 --port $PORT"
