@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["python39", "gcc", "g++", "gnumake", "pkg-config"]
+nixPkgs = ["python39", "gcc", "gnumake", "pkg-config"]
 
 [phases.install]
 cmds = [
