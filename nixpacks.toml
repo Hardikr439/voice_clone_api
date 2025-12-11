@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["python39Full","gcc"]
+nixPkgs = ["python39Full","gcc","python39Packages.pip","python39Packages.setuptools","python39Packages.wheel"]
 
 [phases.install]
 cmds = ["chmod +x install_deps.sh && bash install_deps.sh"]
