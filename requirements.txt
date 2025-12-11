@@ -1,4 +1,7 @@
 # API Dependencies
+cython>=0.29.34
+numpy>=1.24.0
+pkuseg --no-build-isolation
 fastapi>=0.104.0
 uvicorn[standard]>=0.24.0
 motor>=3.3.0  # Async MongoDB driver
