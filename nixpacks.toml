@@ -1,0 +1,15 @@
+[phases.setup]
+nixPkgs = ["python39", "gcc", "g++", "gnumake", "pkg-config"]
+
+[phases.install]
+cmds = [
+    "pip install --upgrade pip setuptools wheel",
+    "pip install numpy>=1.24.0 Cython>=0.29.0",
+    "pip install -r requirements.txt"
+]
+
+[phases.build]
+cmds = []
+
+[start]
+cmd = "uvicorn api:app --host 0.0.0.0 --port $PORT"
