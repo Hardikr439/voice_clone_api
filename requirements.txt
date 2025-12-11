@@ -1,0 +1,10 @@
+# API Dependencies
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+motor>=3.3.0  # Async MongoDB driver
+pymongo>=4.5.0
+pydantic<=2.0.0
+python-multipart>=0.0.6
+torch
+torchaudio
+chatterbox-tts
